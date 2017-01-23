@@ -6,14 +6,15 @@
 
 <body>
 	<!-- 
-	tutorial taken from
-		- https://www.youtube.com/watch?v=VGlDR1QiV3A
-		- https://www.youtube.com/watch?v=cSy6_tNNZsE
+	todo: add descrip
 	-->
 
-	<!-- // firsName etc are text bindings -->
-	<p>First name: <strong id="firstname"></strong></p>
-	<p>Second name: <strong id="secondname"></strong></p>
+	<h1>Welcome <span data-bind="text: firstName"></span> <span data-bind="text: lastName"></span></h1>
+
+	<label>First Name:</label> 
+	<input type="text" data-bind="value: firstName"> 
+	<label>Last Name:</label> 
+	<input type="text" data-bind="value: lastName">
 </body>
 <!-- data-main: the root of our modules -->
 <script data-main="js/main" src="js/require.js"></script>
